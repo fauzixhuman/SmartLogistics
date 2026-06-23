@@ -39,6 +39,10 @@
 
     <!-- CENTER -->
     <center>
-        <StackPane fx:id="contentArea" />
+        <ScrollPane fitToWidth="true" fitToHeight="true" styleClass="main-scroll-pane" vbarPolicy="AS_NEEDED" hbarPolicy="NEVER">
+            <content>
+                <StackPane fx:id="contentArea" />
+            </content>
+        </ScrollPane>
     </center>
 </BorderPane>
