@@ -19,7 +19,7 @@
                 <Separator prefWidth="180" />
                 <!-- MENU -->
                 <Button fx:id="btnDashboard" onAction="#loadHome" styleClass="menu-btn" text="🏠  Dashboard" />
-                <Button fx:id="btnPrediksi" onAction="#loadPrediksi" styleClass="menu-btn" text="🚀  Prediksi Pengiriman" />
+                <Button fx:id="btnPrediksi" onAction="#loadPrediksi" styleClass="menu-btn" text="🚀  Prediksi Kirim" />
                 <Region VBox.vgrow="ALWAYS" />
             </VBox>
         </ScrollPane>
