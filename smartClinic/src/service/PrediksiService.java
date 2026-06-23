@@ -14,10 +14,12 @@ public class PrediksiService {
         ProcessBuilder pb = new ProcessBuilder(
             pythonCmd,
             scriptPath,
+            pengiriman.getKotaAsal(),
+            pengiriman.getKotaTujuan(),
+            pengiriman.getJenisPengiriman(),
             String.valueOf(pengiriman.getBerat()),
-            String.valueOf(pengiriman.getPanjang()),
-            String.valueOf(pengiriman.getLebar()),
-            String.valueOf(pengiriman.getTinggi())
+            String.valueOf(pengiriman.getJarakRute()),
+            pengiriman.getSegmenPelanggan()
         );
         
         Process process = pb.start();

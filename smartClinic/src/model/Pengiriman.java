@@ -1,16 +1,44 @@
 package model;
 
 public class Pengiriman {
+    private String kotaAsal;
+    private String kotaTujuan;
+    private String jenisPengiriman;
     private double berat;
-    private double panjang;
-    private double lebar;
-    private double tinggi;
+    private double jarakRute;
+    private String segmenPelanggan;
 
-    public Pengiriman(double berat, double panjang, double lebar, double tinggi) {
+    public Pengiriman(String kotaAsal, String kotaTujuan, String jenisPengiriman, double berat, double jarakRute, String segmenPelanggan) {
+        this.kotaAsal = kotaAsal;
+        this.kotaTujuan = kotaTujuan;
+        this.jenisPengiriman = jenisPengiriman;
         this.berat = berat;
-        this.panjang = panjang;
-        this.lebar = lebar;
-        this.tinggi = tinggi;
+        this.jarakRute = jarakRute;
+        this.segmenPelanggan = segmenPelanggan;
+    }
+
+    public String getKotaAsal() {
+        return kotaAsal;
+    }
+
+    public void setKotaAsal(String kotaAsal) {
+        this.kotaAsal = kotaAsal;
+    }
+
+    public String getKotaTujuan() {
+        return kotaTujuan;
+    }
+
+    public void setKotaTujuan(String kotaTujuan) {
+        this.kotaTujuan = kotaTujuan;
+    }
+
+    public String getJenisPengiriman() {
+        return jenisPengiriman;
+    }
+
+    public void setJenisPengiriman(String jenisPengiriman) {
+        this.jenisPengiriman = jenisPengiriman;
     }
 
     public double getBerat() {
@@ -21,27 +49,19 @@ public class Pengiriman {
         this.berat = berat;
     }
 
-    public double getPanjang() {
-        return panjang;
+    public double getJarakRute() {
+        return jarakRute;
     }
 
-    public void setPanjang(double panjang) {
-        this.panjang = panjang;
+    public void setJarakRute(double jarakRute) {
+        this.jarakRute = jarakRute;
     }
 
-    public double getLebar() {
-        return lebar;
+    public String getSegmenPelanggan() {
+        return segmenPelanggan;
     }
 
-    public void setLebar(double lebar) {
-        this.lebar = lebar;
-    }
-
-    public double getTinggi() {
-        return tinggi;
-    }
-
-    public void setTinggi(double tinggi) {
-        this.tinggi = tinggi;
+    public void setSegmenPelanggan(String segmenPelanggan) {
+        this.segmenPelanggan = segmenPelanggan;
     }
 }

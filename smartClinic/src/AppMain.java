@@ -12,7 +12,7 @@ public class AppMain extends Application {
         FXMLLoader loader =new FXMLLoader(getClass().getResource("/view/dashboard.fxml"));
         Scene scene = new Scene(loader.load());
         scene.getStylesheets().add(getClass().getResource("/style/global.css").toExternalForm());        
-        stage.setTitle("Klasifikasi Paket Logistik");
+        stage.setTitle("SmartLogistics");
         stage.setScene(scene);
         stage.setMaximized(true);
         stage.show();

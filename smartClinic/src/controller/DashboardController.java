@@ -22,8 +22,8 @@ public class DashboardController {
     }
 
     @FXML
-    private void loadKlasifikasi() {
-        loadView("/view/klasifikasi_paket.fxml");
+    private void loadPrediksi() {
+        loadView("/view/prediksi_paket.fxml");
     }
 
     private void loadView(String fxml) {

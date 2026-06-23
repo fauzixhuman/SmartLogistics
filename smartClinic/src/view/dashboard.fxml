@@ -15,11 +15,11 @@
     <left>
         <ScrollPane fitToWidth="true" hbarPolicy="NEVER" styleClass="sidebar-scroll" vbarPolicy="AS_NEEDED">
             <VBox fx:id="sidebar" alignment="TOP_CENTER" prefWidth="240" spacing="5" styleClass="sidebar">
-                <Label fx:id="logoTitle" styleClass="logo-title" text="LOGISTIK APP" />
+                <Label fx:id="logoTitle" styleClass="logo-title" text="SmartLogistics" />
                 <Separator prefWidth="180" />
                 <!-- MENU -->
                 <Button fx:id="btnDashboard" onAction="#loadHome" styleClass="menu-btn" text="🏠  Dashboard" />
-                <Button fx:id="btnKlasifikasi" onAction="#loadKlasifikasi" styleClass="menu-btn" text="📦  Klasifikasi Paket" />
+                <Button fx:id="btnPrediksi" onAction="#loadPrediksi" styleClass="menu-btn" text="🚀  Prediksi Pengiriman" />
                 <Region VBox.vgrow="ALWAYS" />
             </VBox>
         </ScrollPane>
@@ -29,8 +29,8 @@
     <top>
         <HBox alignment="CENTER_LEFT" spacing="20" styleClass="topbar">
             <VBox spacing="5">
-                <Label styleClass="dashboard-title" text="Klasifikasi Paket Logistik" />
-                <Label styleClass="dashboard-subtitle" text="Sistem Cerdas Penentu Kategori Paket" />
+                <Label styleClass="dashboard-title" text="LogiPredict: Sistem Prediksi" />
+                <Label styleClass="dashboard-subtitle" text="Sistem Prediksi Ketepatan Waktu Logistik" />
             </VBox>
             <Region HBox.hgrow="ALWAYS" />
             <TextField prefWidth="250" promptText="Cari Resi..." styleClass="search-box" />
